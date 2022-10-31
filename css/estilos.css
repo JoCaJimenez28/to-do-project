@@ -1,0 +1,99 @@
+body, html{
+    
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #355764;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box{
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+.title{
+    color: #FFFFFF;
+    font-weight:400;
+    font-size: 48px;
+}
+.title-yellow{
+    color: #FFEA11;
+    font-weight:400;
+    font-size: 48px;
+    font-display: none;
+}
+
+.form-box input[type="text"],
+.form-box input[type="password"]{
+    width: 300px;
+    height: 40px;
+    border: 0;
+    background:  #789395;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: block;
+    margin: 40px auto;
+    padding: 10px 10px;
+    border: 2px #749F82;
+    outline: none;
+    transition: 0.25s;
+    color: #FFFFFF;
+}
+
+
+.form-box button[type="submit"]{
+    width: 300px;
+    height: 40px;
+    border: 0;
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: block;
+    margin: 40px auto;
+    padding: 10px 10px;
+    outline: none;
+    transition: 0.25s;
+    color: #355764;
+    font-weight: bold;
+    font-size: 32;
+    cursor: pointer;
+}
+
+.form-box button[type="submit"]:hover{
+    background-color: #749F82;
+    color: #FFEA11;
+}
+
+.fuente{
+    
+    color: #FFFFFF;
+    font-weight:400;
+    font-size: 16px;
+    
+}
+
+.link{
+    color: #FFEA11;
+    font-weight:400;
+    font-size: 16px;
+}
+
+.imagen-login{
+    width: 322.97px;
+    height: 293.23px;
+    left: 249px;
+    top: 984.3px;
+
+    opacity: 0.5;
+    display: block;
+}

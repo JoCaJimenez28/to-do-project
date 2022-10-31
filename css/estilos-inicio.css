@@ -1,0 +1,121 @@
+body{
+    background-color: #2B4865;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.grid div{
+    padding: 1em;
+}
+
+.nested-grid{
+    display: grid;
+}
+
+.element1{    
+    background-color: #749F82;
+    grid-column: 1/12;
+    border: 1px solid #2B4865;
+}
+
+.element2{    
+    background-color: #749F82;
+    grid-column: 12/13;
+    border: 1px solid #2B4865;
+}
+
+.element3{    
+    background-color: #5A8F7B;
+    grid-row: 2/13;
+    border: 1px solid #2B4865;
+}
+
+.element4{
+    /*display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);*/
+
+    background-color: #355764;
+    grid-column: 2/13;
+    grid-row: 2/13;
+    border: 1px solid #2B4865;
+}
+
+.grid div:hover{
+    border: 1px solid #FFEA11;
+}
+
+.form-box{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-box:hover{
+    border: 1px solid #FFEA11;
+}
+.form-box button[type="submit"]{
+    width: 270px;
+    height: 30px;
+    border: 0;
+    background: #749F82;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 10px;
+    outline: none;
+    transition: 0.25s;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 32;
+    cursor: pointer;
+}
+
+.form-box button[type="submit"]:hover{
+    background-color: #FFFFFF;
+    color: #355764;
+    border: 0px solid #749F82;
+}
+
+.form-box img, p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto{
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.texto-res{
+    color: #FFEA11;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.grid-e3{        
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.imagen-inicio{
+    width: 156px;
+    height: 156px;
+    box-align: center;
+}
