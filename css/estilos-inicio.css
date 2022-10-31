@@ -14,6 +14,8 @@ body{
 
 .nested-grid{
     display: grid;
+    grid-template-columns: 30%;
+    gap: 0;
 }
 
 .element1{    
@@ -23,7 +25,7 @@ body{
 }
 
 .element2{    
-    background-color: #749F82;
+    background-color: #5A8F7B;
     grid-column: 12/13;
     border: 1px solid #2B4865;
 }
@@ -32,6 +34,7 @@ body{
     background-color: #5A8F7B;
     grid-row: 2/13;
     border: 1px solid #2B4865;
+    padding: 1em;
 }
 
 .element4{
@@ -89,14 +92,16 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .texto{
     color: #FFFFFF;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 300;
-    font-size: 28px;
+    font-size: 20px;
     line-height: 44px;
-    text-align: center;
+}
+.texto:hover{
+    border: 1px solid #FFEA11;
 }
 
 .texto-res{
@@ -109,13 +114,13 @@ body{
     text-align: center;
 }
 
-.grid-e3{        
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
 .imagen-inicio{
     width: 156px;
     height: 156px;
     box-align: center;
+}
+
+.imagen-usuario{
+    width: 50px;
+    height: 50px;
 }
