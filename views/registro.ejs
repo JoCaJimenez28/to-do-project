@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resources/css/estilos.css">
+    <link rel="shortcut icon" href="resources/css/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <form action="/registro" method="POST" class="form-box">
+        <h1 class="title">¡Crea tu cuenta!</h1>
+
+        <input type="text" placeholder="Nombre(s)" name="nombre">
+        <input type="text" placeholder="Apellido Paterno" name="aPaterno">
+        <input type="text" placeholder="Apellido materno" name="aMaterno">
+        <input type="text" placeholder="Correo" name="correo" required>
+        <label for="rol">Rol</label>
+        <select name="rol" id="rol" class="select-rol">
+            <option value="docente" selected>Docente</option>
+            <option value="alumno" selected>Alumno</option>
+        </select>
+        <input type="password" name="password" id="" placeholder="Contraseña" required>
+        <button type="submit" class= value="Save">Registrarse</button>
+        <p class="fuente">¿Ya tienes una cuenta? <a href="login.html" class="link">Inicia Sesión</a> aquí</p>
+    </form>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <% if(typeof alert != "undefined") { %>
+        <script>
+            swal.fire({
+                title: '<%= alertTitle  %>',
+                text: '<%= alertMessage  %>',
+                icon: '<%= alertIcon %>',
+                showConfirmButton: <% false %>,
+                timer: <% timer %>
+            }).then(()=>{
+                window.location='<% ruta %>'
+            })
+        </script>
+    <% } %>
+</body>
+</html>
