@@ -10,16 +10,23 @@
 <body>
     <div class="div-todo">
         <div class="element1">
-            <h2>¡Hola, José Carlos!</h2>            
+            <% if(login) { %>
+                    <div><h2>¡Bienvenido <%= name %> !</h2></div>
+                    <div><a href="logout" class="a-logout">Logout</a></div> 
+            <% }
+                else { %>
+                    <div><h2> <%= name %></h2></div>
+                    <a href="login" class="a-logout">Login</a>
+                <% } %>           
         </div>
         <div class="element2">
             <button><img src="resources/css/images/usuario.png" alt=""></button>
         </div>
         <div class="element3">
-            <button type="submit">Materias</button>
-            <button type="submit">Biblioteca</button>
-            <button type="submit">Calendario</button>                
-            <button type="submit">Tareas</button>
+            <button type="submit"><img src="resources/css/images/icono-materias.png" alt="" class="imagen-menu"> Materias</button>
+            <button type="submit"><img src="resources/css/images/icono-biblioteca.png" alt="" class="imagen-menu"> Biblioteca</button>
+            <button type="submit"><img src="resources/css/images/icono-calendario.png" alt="" class="imagen-menu"> Calendario</button>                
+            <button type="submit"><img src="resources/css/images/icono-tareas.png" alt="" class="imagen-menu"> Tareas</button>
             
         </div>
         <div class="element4">
@@ -27,6 +34,10 @@
                 <img src="resources/css/images/cerrDO.png" alt="">
                 <h2>¡Bienvenido! selecciona una tarea o una materia para ver</h2>
             </form>
+            <form action="" method="get">
+                <iframe src="./verTareas.html" frameborder="0"></iframe>
+            </form>
+            
         </div>
     </div>
 </body>

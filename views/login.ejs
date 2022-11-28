@@ -10,18 +10,31 @@
     
 </head>
 <body>    
-    <form action="auth" method="POST" class="form-box">
+    <form action="/auth" method="POST" class="form-box">
         <h1 class="title">Inicia Sesion</h1>
-        <input type="text" placeholder="Correo" name="user "id="user">
+        <input type="text" placeholder="Correo" name="user" id="user">
         <input type="password" name="password" id="password" placeholder="Contraseña">
-        <button type="submit" onclick="login();">Iniciar Sesion</button>
+        <button type="submit" >Iniciar Sesion</button>
         <p class="fuente">¿No tienes una cuenta? <a href="registro.html" class="link">Registrate</a> aquí</p>
         <div>
             <img src="resources/css/images/hi 2.png" alt="" class="imagen-login">
         </div>
     </form>
     
-
-    <script src="./js/login.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <% if(typeof alert != "undefined") { %>
+        <script>
+            swal.fire({
+                title: '<%= alertTitle  %>',
+                text: '<%= alertMessage  %>',
+                icon: '<%= alertIcon %>',
+                showConfirmButton: <%= false %>,
+                timer: <%= timer %>
+            }).then(()=>{
+                window.location='/<%= ruta %>'
+            })
+        </script>
+    <% } %>
 </body>
 </html>
